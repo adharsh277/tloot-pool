@@ -1,5 +1,4 @@
 import type { NextConfig } from "next";
-import webpack from "webpack";
 
 const nextConfig: NextConfig = {
   images: {
@@ -17,19 +16,10 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  // Ignore TypeScript errors (already added)
+  // ✅ Skip TypeScript checking during build
   typescript: {
     ignoreBuildErrors: true,
-  },
-
-  // 🚀 IMPORTANT — ignore hardhat project completely
-  webpack: (config) => {
-    config.plugins.push(
-      new webpack.IgnorePlugin({
-        resourceRegExp: /big-bag-pool/,
-      })
-    );
-    return config;
+    tsconfigPath: "./tsconfig.json",
   },
 };
 
