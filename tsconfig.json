@@ -18,20 +18,13 @@
       "@/*": ["./src/*"]
     }
   },
+
   "include": [
     "next-env.d.ts",
-    "src/**/*",
-    ".next/types/**/*.ts"
+    "src/**/*"
   ],
+
   "exclude": [
-    "node_modules",
-    "big-bag-pool",
-    "hardhat.config.ts",
-    "ignition",
-    "scripts",
-    "contracts",
-    "test",
-    "cache",
-    "artifacts"
+    "**/*"
   ]
 }
