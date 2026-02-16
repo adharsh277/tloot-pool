@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-# tloot-pool
-=======
+
 # TLOOT – GameFi Social Ticketing Platform
 
 A blockchain-powered platform that makes premium event tickets more accessible through collaborative funding and GameFi mechanics.
